@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 import { convertFromHexDecimal } from '../utility/helpers'
 import { checkIsCorrectChain } from '../utility/checkIsCorrectChain'
 
+import Web3 from 'web3'
+
 export const useMetamask = () => {
     const [selectedAccount, setSelectedAccount] = useState(null)
     const [accountBalance, setAccountBalance] = useState(null)
@@ -23,8 +25,16 @@ export const useMetamask = () => {
         try {
             if (!window.ethereum) throw new Error("No crypto wallet found")
             setLoading(true)
-            const chainId = await window.ethereum.request({ method: 'eth_chainId' })
+            // Get the hexChainId
+            const hexChainId = await window.ethereum.request({ method: 'eth_chainId' })
+
+            // Convert that into the chainId as number
+            const chainId = Web3.utils.hexToNumber(hexChainId)
+
+            // Check for whether we are on the correct network
             if (!checkIsCorrectChain(chainId)) throw new Error('Wrong Network')
+
+            // Finally, request the account
             window.ethereum.request({ method: 'eth_requestAccounts' })
             .then(response => {
                     accountChangedHandler(response[0])

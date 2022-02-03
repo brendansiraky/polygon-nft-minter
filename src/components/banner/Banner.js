@@ -2,14 +2,17 @@ import React, { useState } from 'react'
 
 import Web3 from 'web3'
 import { toast } from 'react-toastify'
+import 'dotenv/config'
 
 import { Info } from '../info/Info'
 import { Button } from '../button/Button'
 import { Settings } from './Settings'
-import { contractAddress, simpleContract } from '../../utility/contract'
+import { simpleContract } from '../../utility/contract'
 import { useCost } from '../../hooks/useCost'
 
 import styles from './Banner.module.scss'
+
+const contractAddress = process.env.REACT_APP_CONTRACT_ADDRESS
 
 // TODO Have a flag set to disable the button while attempting to mint
 // TODO check if we are the owner of this token

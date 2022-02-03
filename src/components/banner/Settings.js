@@ -1,8 +1,9 @@
 import React from 'react'
 
 // import { Socials } from '../social/Socials'
-import styles from './Banner.module.scss'
 import { WalletSettings } from '../wallet/WalletSettings'
+
+import styles from './Banner.module.scss'
 
 export const Settings = () => {
    return (
