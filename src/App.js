@@ -1,9 +1,10 @@
 import React from 'react'
 
-import './styles/global.scss'
-import { Banner } from './components/banner/Banner'
 import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css';
+
+import { Banner } from './components/banner/Banner'
+import 'react-toastify/dist/ReactToastify.css'
+import './styles/global.scss'
 
 function App() {
     return (
