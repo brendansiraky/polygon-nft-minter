@@ -12,10 +12,11 @@ export const useMetamask = () => {
     useEffect(() => {
         if (window.ethereum) {
             window.ethereum.on('connect', connectWallet)
+            window.ethereum.on('disconnect', disconnectWallet)
             window.ethereum.on('accountsChanged', () => window.location.reload())
             window.ethereum.on('chainChanged', () => window.location.reload())
-            window.ethereum.on('disconnect', disconnectWallet)
         }
+        // eslint-disable-next-line
     }, [])
 
     const connectWallet = async () => {
