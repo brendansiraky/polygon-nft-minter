@@ -1,3 +1,3 @@
-# 🗃 NFT Minter Tutorial Starter Files
+# 🗃 NFT Minter
 
-This project contains the starter files for [Alchemy's NFT Minter tutorial](https://docs.alchemyapi.io/alchemy/tutorials/nft-minter), in which we teach you how to connect your smart contract to your React dApp project by building an NFT Minter using Metamask and Web3.
+This project contains a basic NFT Minter example with making use of [Alchemy's API](https://docs.alchemy.com/alchemy/), we are easily able to integrate with the Ethereum testnet (Ropsten).
