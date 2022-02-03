@@ -3,9 +3,9 @@ import React, { useState } from 'react'
 import Web3 from 'web3'
 import { toast } from 'react-toastify'
 
-// import { Info } from '../info/Info'
+import { Info } from '../info/Info'
 import { Button } from '../button/Button'
-// import { Settings } from './Settings'
+import { Settings } from './Settings'
 import { contractAddress, simpleContract } from '../../utility/contract'
 import { useCost } from '../../hooks/useCost'
 
@@ -58,7 +58,7 @@ export const Banner = () => {
 
     return (
         <div className={styles.banner}>
-            {/* <Settings /> */}
+            <Settings />
             <div className="container">
                 <div className="row">
                     <div className="col-lg-24">
@@ -76,7 +76,7 @@ export const Banner = () => {
                     </div>
                 </div>
             </div>
-            {/* <Info /> */}
+            <Info />
         </div>
 
     )

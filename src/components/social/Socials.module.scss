@@ -9,6 +9,10 @@
     width: 40px;
     margin-left: 20px;
 
+    @include breakpoint(sm) {
+        margin-bottom: 10px;
+    }
+
     &.twitter {
         @include background-image(twitter-icon, svg, 25px 25px, center, no-repeat);
     }
