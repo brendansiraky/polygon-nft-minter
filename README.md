@@ -1,4 +1,4 @@
-# polygon-nft-minter
+# 🚀 polygon-nft-minter 🚀
 
 A project built in React interacting with an Ethereum smart contract that was deployed on the polygon network.
 
