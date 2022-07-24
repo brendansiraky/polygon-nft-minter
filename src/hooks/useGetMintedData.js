@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { simpleContract } from '../utility/contract';
+
+import { simpleContract } from '../utility/contract'
 
 export const useGetMintedData = () => {
     const [maxSupply, setMaxSupply] = useState(null)

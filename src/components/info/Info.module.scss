@@ -6,7 +6,9 @@
     margin-bottom: 10px;
 
     .refresh {
+        
         @include background-image(reload-icon, svg, contain, center, no-repeat);
+        cursor: pointer;
         width: 22px;
         height: 22px;
         margin-right: 10px;

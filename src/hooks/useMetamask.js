@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 
+import Web3 from 'web3'
+
 import { convertFromHexDecimal } from '../utility/helpers'
 import { checkIsCorrectChain } from '../utility/checkIsCorrectChain'
-
-import Web3 from 'web3'
 
 export const useMetamask = () => {
     const [selectedAccount, setSelectedAccount] = useState(null)

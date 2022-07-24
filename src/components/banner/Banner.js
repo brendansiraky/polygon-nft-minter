@@ -9,19 +9,17 @@ import { Button } from '../button/Button'
 import { Settings } from './Settings'
 import { simpleContract } from '../../utility/contract'
 import { useCost } from '../../hooks/useCost'
-
 import styles from './Banner.module.scss'
 
 const contractAddress = process.env.REACT_APP_CONTRACT_ADDRESS
 
 // TODO Have a flag set to disable the button while attempting to mint
-// TODO check if we are the owner of this token
 const useMint = () => {
     const [cost] = useCost()
 
     const mint = async (amount) => {
 
-        // Do a check if we are the owner of this token
+        // TODO Do a check if we are the owner of this token
         const mintPromise = async () => {
             const transactionParameters = {
                 to: contractAddress,

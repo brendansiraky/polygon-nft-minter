@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 
-import styles from './Info.module.scss'
-import { useCost } from '../../hooks/useCost'
-import { simpleContract } from '../../utility/contract';
-import { useGetMintedData } from '../../hooks/useGetMintedData';
+import { simpleContract } from '../../utility/contract'
+import { useGetMintedData } from '../../hooks/useGetMintedData'
 import { convertFromWei } from '../../utility/helpers'
+import { useCost } from '../../hooks/useCost'
+import styles from './Info.module.scss'
 
 export const Info = () => {
 

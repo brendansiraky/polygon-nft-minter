@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import { createAlchemyWeb3 } from "@alch/alchemy-web3"
 
-import contractABI from '../abi/simple_contract_ropsten_abi.json'
+import contractABI from '../abi/simple_contract_polygon_abi.json'
 
 const alchemyKey = process.env.REACT_APP_ALCHEMY_KEY
 const contractAddress = process.env.REACT_APP_CONTRACT_ADDRESS
