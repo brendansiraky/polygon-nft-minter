@@ -18,7 +18,5 @@ npm install
 npm run start
 ```
 
-[Checkout the live example](https://www.brendansiraky.com/)
-
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
