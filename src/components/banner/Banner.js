@@ -4,6 +4,8 @@ import Web3 from 'web3'
 import { toast } from 'react-toastify'
 import 'dotenv/config'
 
+//commented
+
 import { Info } from '../info/Info'
 import { Button } from '../button/Button'
 import { Settings } from './Settings'
