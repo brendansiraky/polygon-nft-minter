@@ -6,6 +6,10 @@
     margin-bottom: 10px;
 }
 
+.value {
+    margin-left: 5px;
+}
+
 .refresh {
     cursor: pointer;
     width: 22px;

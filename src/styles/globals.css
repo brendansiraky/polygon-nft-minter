@@ -2,6 +2,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: SuisseIntl, sans-serif;
+}
+
+@font-face {
+    font-family: 'SuisseIntl';
+    src: url('../assets/fonts/SuisseIntl-Regular.woff');
+    font-weight: 400;
+    font-style: normal;
 }
 
 html,
@@ -38,5 +46,13 @@ input {
     html {
         color-scheme: dark;
     }
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
 }
 

@@ -5,7 +5,6 @@ import { Settings } from './Settings'
 import { Info } from '../info/Info'
 import styles from './Banner.module.css'
 import { Button } from '../button/ Button'
-import { useMetamask } from '@/hooks/useMetamask'
 
 export const Banner = () => {
     const [quantity, setQuantity] = useState(0)

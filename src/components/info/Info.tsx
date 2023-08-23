@@ -26,10 +26,8 @@ const Section: React.FC<SectionProps> = ({ name, value, onFetch, loading }) => {
     return (
         <div className={styles.section}>
             <div onClick={onFetch} className={`${styles.refresh} ${loading ? styles.active : ''}`} />
-            <div>
-                <h2>{name}: </h2>
-            </div>
-            <span>{value}</span>
+            <h2>{name}: </h2>
+            <span className={styles.value}>{value}</span>
         </div>
     )
 }

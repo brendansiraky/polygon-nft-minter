@@ -4,7 +4,6 @@ import { toast } from "react-toastify"
 import { simpleContract } from "@/utility/contract"
 // import { CONFIG } from "../../config"
 import { useCost } from "./useCost"
-import { useMetamask } from "./useMetamask"
 
 export const useMint = () => {
     const [cost] = useCost()
