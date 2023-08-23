@@ -1,0 +1,12 @@
+.displayBox {
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}

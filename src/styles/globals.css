@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(222,138,216,1) 50%, rgba(105,205,195,1) 100%);
+    font-size: 18px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+button,
+input {
+	overflow: visible;
+	-webkit-appearance: none;
+    font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+}
+
