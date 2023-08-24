@@ -11,6 +11,9 @@
 
 # production
 /build
+/.next
+
+/src/playground.js
 
 # misc
 .DS_Store

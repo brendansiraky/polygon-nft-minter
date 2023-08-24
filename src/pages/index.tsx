@@ -1,15 +1,8 @@
-import { useState } from 'react'
-
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import { ToastContainer } from 'react-toastify'
 import { Banner } from '@/components/banner/Banner'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
-    const [quantity, setQuantity] = useState<number>(0)
-
     return (
         <>
             <Head>

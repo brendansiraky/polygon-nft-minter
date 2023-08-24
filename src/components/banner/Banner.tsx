@@ -3,8 +3,8 @@ import { useState } from 'react'
 import { useMint } from '@/hooks/useMint'
 import { Settings } from './Settings'
 import { Info } from '../info/Info'
-import styles from './Banner.module.css'
 import { Button } from '../button/ Button'
+import styles from './Banner.module.css'
 
 export const Banner = () => {
     const [quantity, setQuantity] = useState(0)
@@ -28,6 +28,5 @@ export const Banner = () => {
             </div>
             <Info />
         </div>
-
     )
 }
